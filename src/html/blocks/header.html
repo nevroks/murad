@@ -1,12 +1,20 @@
 <header class="header">
-            <div class="logo">Logo</div>
-            <nav class="header--navigation">
-                <div class="header--navigation__desktop">
+    <div class="logo"><img src="./../../img/logo.png" alt=""></div>
+    <nav class="header--navigation">
+        <div class="header--navigation__desktop">
+            <div class="header--navigation__desktop--pages">
+                <p class="active"><a href="">Home</a></p>
+                <p><a href="">Features</a></p>
+            </div>
+            <div class="header--navigation__desktop--account">
+                <button class="header--navigation__desktop--account__login">Login</button>
+                <button class="header--navigation__desktop--account__create">Create Account</button>
+            </div>
 
-                </div>
-                <button class="mobile-nav-btn">
+        </div>
+        <button class="mobile-nav-btn">
                     <div class="nav-icon"></div>
                 </button>
-            </nav>
+    </nav>
 </header>
 @@include('mobile-nav.html')
