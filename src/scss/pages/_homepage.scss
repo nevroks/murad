@@ -1,0 +1,139 @@
+.hireSmarter {
+    position: relative;
+    height: 1200px;
+    overflow-x: clip;
+}
+
+.hireSmarter__card {
+    position: absolute;
+    left: 45%;
+    top: -33%;
+    width: 1204px;
+    height: 1204px;
+    background-image: url('./../../img/reviewsCard/biggestEcllipse.png');
+    z-index: 2;
+    &::after {
+        content: url('./../../img/reviewsCard/smallestEclipse.png');
+        position: absolute;
+        top: 45%;
+        left: 10%;
+        z-index: 4;
+    }
+    &::before {
+        content: url('./../../img/reviewsCard/biggerEcllipse.png');
+        position: absolute;
+        top: 34%;
+        left: 8%;
+        z-index: 3;
+    }
+}
+
+.hireSmarter__card-img {
+    position: absolute;
+    z-index: 5;
+    bottom: 141px;
+    left: 49px;
+}
+
+.hireSmarter__card-socials {
+    position: absolute;
+    z-index: 5;
+    &.facebook {
+        top: 356px;
+        left: -91px;
+    }
+    &.twitter {
+        top: 245px;
+        right: 367px;
+    }
+    &.snapchat {
+        top: 435px;
+        right: 276px;
+    }
+    &.instagram {
+        bottom: -116px;
+        right: 390px;
+    }
+}
+
+.hireSmarter__text {
+    max-width: 360px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hireSmarter__text--title {
+    margin-top: 100px;
+    p {
+        font-size: 42.54px;
+        font-weight: 400;
+        line-height: 150.5%;
+    }
+}
+
+.hireSmarter__text--content {
+    p {
+        font-size: 23.94px;
+        font-weight: 500;
+        line-height: 150%;
+        margin: 30px 0 40px;
+    }
+}
+
+.hireSmarter__text--content__btns {
+    button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        padding: 15px 25px;
+        &:nth-child(odd) {
+            border-radius: 9px;
+            background: var(--accent-color);
+            &:hover {
+                background-color: rgb(42, 192, 147);
+            }
+        }
+        &:nth-child(even) {
+            border-radius: 9px;
+            border: 1px solid transparent;
+            &:hover {
+                border: 1px solid var(--main-text-color);
+                background-color: #ffffff2a;
+            }
+        }
+    }
+}
+
+.hireSmarter__companies {
+    max-width: 500px;
+    margin-top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 60px;
+    img {
+        transform: scale(110%);
+    }
+}
+
+.checkBefore {
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+    justify-content: center;
+    margin: 130px 0 150px;
+    text-align: center;
+}
+
+.checkBefore__benefits {
+    display: flex;
+    justify-content: center;
+    column-gap: 130px;
+    div {
+        p {
+            color: var(--gray-color);
+            font-size: 16px;
+            line-height: 150%;
+        }
+    }
+}
