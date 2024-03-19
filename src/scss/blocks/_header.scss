@@ -1,5 +1,6 @@
 .header {
     display: flex;
+    align-items: center;
     column-gap: 120px;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -7,6 +8,10 @@
     position: relative;
     z-index: 10;
     background: transparent;
+    .logo {
+        width: 90px;
+        height: 45px;
+    }
 }
 
 .header--navigation__desktop {
