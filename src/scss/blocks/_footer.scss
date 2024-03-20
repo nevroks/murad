@@ -51,3 +51,23 @@
         }
     }
 }
+
+@media (max-width:600px) {
+    .footer__info {
+        padding: 20px 0 20px;
+        p {
+            font-size: 20px;
+        }
+    }
+    .footer__info--img-container {
+        img {
+            padding: 6px;
+        }
+        a {
+            margin-right: 10px;
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+}

@@ -322,3 +322,121 @@
     color: var(--gray-color);
     line-height: 150%;
 }
+
+@media (max-width:1400px) {
+    .ourFeatures__feature-container {
+        border-bottom: solid 1px var(--accent-color);
+        &::after {
+            content: '';
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .hireSmarter__card {
+        left: 20%;
+        top: -33%;
+        transform: scale(70%);
+    }
+}
+
+@media (max-width:800px) {
+    .hireSmarter__card {
+        display: none;
+    }
+    .checkBefore__benefits {
+        column-gap: 50px;
+    }
+    .ourFeatures__wrapper {
+        gap: 30px;
+        padding: 60px 50px;
+    }
+    .ourFeatures__feature-container {
+        row-gap: 10px;
+        padding: 30px 60px 30px 30px;
+    }
+    .ourFeatures__feature-container__title {
+        font-size: 22px;
+        line-height: 150%;
+    }
+    .explore-list__item {
+        height: 300px;
+        text-align: center;
+    }
+    .explore__footer {
+        flex-direction: column;
+        row-gap: 40px;
+    }
+    .checkOut-list {
+        column-gap: 15px;
+    }
+}
+
+@media (max-width:600px) {
+    .hireSmarter {
+        height: 110vh;
+    }
+    .checkBefore__benefits {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+    }
+    .ourFeatures__wrapper {
+        grid-template-rows: 1fr;
+        grid-template-columns: 1fr;
+    }
+    .hireSmarter__companies img {
+        transform: scale(100%);
+    }
+    .explore-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        margin: 60px 0 120px;
+        width: 100%;
+    }
+    .explore-list__item:nth-child(odd) {
+        background-color: unset;
+    }
+    .explore-list__item:nth-child(1) {
+        background-color: rgba(186, 173, 192, 0.05);
+    }
+    .explore-list__item:nth-child(4) {
+        background-color: rgba(186, 173, 192, 0.05);
+    }
+    .explore-list__item:nth-child(5) {
+        background-color: rgba(186, 173, 192, 0.05);
+    }
+    .checkOut-list {
+        flex-wrap: wrap;
+        row-gap: 30px;
+    }
+}
+
+@media (max-width:400px) {
+    .checkBefore {
+        display: flex;
+        flex-direction: column;
+        row-gap: 60px;
+        justify-content: center;
+        margin-bottom: 150px;
+        text-align: center;
+        margin-top: 190px;
+    }
+    .hireSmarter {
+        height: unset;
+    }
+    .hireSmarter__companies {
+        display: none;
+    }
+    .hireSmarter__text--content__btns button {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 19px;
+        padding: 12px 20px;
+    }
+    .footer__info {
+        column-gap: 30px;
+    }
+}
